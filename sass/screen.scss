@@ -1,0 +1,138 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// COLORS
+$teal-500:#009688;
+
+$teal-50:#E0F2F1;
+$teal-200:#80CBC4;
+$teal-900:#004D40;
+
+$bluegray-500:#607D8B;
+$bluegray-900:#263238;
+
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+    background:#fff;
+    font-family:Georgia;
+}
+
+// NAVBAR
+nav.navbar {
+    //background:#eee;
+    a {
+        &:hover {
+            background:#ccc;
+        }
+    }
+}
+
+.container .shit {
+    background:#c73b0b;
+    color:#fff;
+    padding-top:60px;
+    position:absolute;
+    text-align:center;
+    top:0;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+// APP STATE
+.navbar {
+    margin:0;
+}
+nav.menu {
+    background:$teal-500;
+    border-bottom:5px solid $teal-900;
+    color:#fff;
+    p {
+        padding:5px 0;
+    }
+}
+
+.zoom {
+    background:#eee;
+    display:inline-block;
+    padding:5px;
+}
+
+.press {
+    padding:20px 0;
+    aside {
+        background:#eee;
+        border-radius:10px;
+        display:inline-block;
+        padding:45px 30px;
+        > span {
+            background:#fff;
+            box-shadow:0 0 5px 0px #999;
+            padding:35px 35px;
+            span {
+                border-radius:100px;
+                background:#ccc;
+                padding:25px 35px;
+            }
+        }
+    }
+
+}
+
+// MAIL TEMP
+.customer {
+    display:block;
+    width:100%;
+    padding:40px 0;
+    &:hover {
+        background:#999;
+        color:#fff;
+    }
+    i {
+        opacity:0;
+        transition:all 0.5s ease;
+    }
+    &:hover i {
+        opacity:1;
+    }
+}
+.mailTemp {
+    /*
+    background:#eee;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    */
+}
+.singleView {
+    background:#eee;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+.sample-show-hide {
+  padding:10px;
+  border:1px solid black;
+  background:white;
+}
+
+.sample-show-hide {
+  -webkit-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+}
+
+.sample-show-hide.ng-hide {
+  opacity:0;
+}
+
+.sample-show-hide.ng-enter {
+    background:#c73b0b;
+}

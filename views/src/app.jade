@@ -1,0 +1,33 @@
+//nav.navbar
+  .container-fluid
+    .navbar-header
+      a.navbar-brand(href='#')
+        i.fa.fa-cogs
+
+nav.navbar
+    .container
+        .navbar-header
+            a.navbar-brand(href="")
+                i.fa.fa-cogs
+                span Project Name
+            ul.nav.navbar-nav
+                li
+                    a(ui-sref="app.about" ui-sref-active="active") Home
+                li
+                    a(ui-sref="app.login" ui-sref-active="active") Login
+                li
+                    a(ui-sref="app.mail" ui-sref-active="active") Mail
+
+div(ui-view="")
+
+//nav.menu
+    .container
+        .row
+            .col-md-4
+                p 
+                i.fa.fa-plus
+                span Chill Stone
+            .col-md-8
+                p 
+                i.fa.fa-cogs
+                span Accts

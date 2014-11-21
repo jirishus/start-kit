@@ -1,0 +1,8 @@
+.container
+    .row.jumbotron
+        h1 App State
+    .row.headRow
+        ul(ng-repeat="part in parts")
+            li.sample-show-hide {{part.type}}
+    .row
+        a.btn.btn-primary(href="" ng-click="addRandom()") Add Item

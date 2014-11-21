@@ -1,0 +1,13 @@
+.mailTemp
+    .container
+        .jumbotron
+            h1 Companies
+        .row
+            p list here
+                ul(ng-repeat="item in items")
+                    li.col-md-4.panel.panel-default.text-center
+                        a.customer(ui-sref="app.mail.single" ng-click="setInfo(item)") 
+                            i.fa.fa-user.fa-2x
+                            span {{item.name}}
+        .row
+            div(ui-view="")
