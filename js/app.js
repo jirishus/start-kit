@@ -32,7 +32,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             url:'/single',
             templateUrl:'views/build/mail.single.html',
             controller:function($scope) {
-                
+                // some small change
             }
         });
 
